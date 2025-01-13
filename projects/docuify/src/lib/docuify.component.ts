@@ -1,16 +1,11 @@
 import { Component } from '@angular/core';
+import { LayoutComponent } from './components/layout/layout.component';
 
 @Component({
-  selector: 'lib-docuify',
+  selector: 'docuify',
   standalone: true,
-  imports: [],
-  template: `
-    <p>
-      docuify works!
-    </p>
-  `,
-  styles: ``
+  imports: [LayoutComponent],
+  template: `<lib-layout></lib-layout>`,
+  styles: ``,
 })
-export class DocuifyComponent {
-
-}
+export class DocuifyComponent {}

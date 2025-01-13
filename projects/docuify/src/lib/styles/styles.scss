@@ -1,0 +1,51 @@
+@use "./variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap");
+
+/* Define font variables for library use */
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+/* Light Theme */
+.light-theme {
+  --background-color: #fff;
+  --font-color: #333;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --background-color: #121a21;
+  --font-color: #fff;
+}
+
+/* Apply theme to the layout */
+:host {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+/* Apply theme to child components */
+lib-sidebar,
+lib-main {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+/* Base styles */
+body,
+p,
+span,
+li {
+  font-family: var(--font-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
