@@ -1,7 +1,12 @@
 <nav class="sidebar">
   <ul>
     @for(menu of menuItems; track menu) {
-    <li>{{ menu }}</li>
+    <li>
+      <span class="method-badge" [ngClass]="menu.method.toLowerCase()">{{
+        menu.method
+      }}</span
+      >{{ menu.endpoint }}
+    </li>
     }
   </ul>
 </nav>

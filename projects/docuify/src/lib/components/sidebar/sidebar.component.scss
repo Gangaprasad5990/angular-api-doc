@@ -1,4 +1,4 @@
-@use "../../styles/variables.scss";
+@use "../../styles/variables.scss" as v;
 
 /* Sidebar Styles */
 .sidebar {
@@ -21,11 +21,56 @@ li {
   padding: 8px 100px 8px 12px;
   border-radius: 12px;
   cursor: pointer;
-  color: variables.$text-color;
+  color: v.$text-color;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
   &:hover {
-    background-color: variables.$hover-background-color; /* Light blue-grey background on hover */
-    color: variables.$hover-text-color;
+    background-color: v.$hover-background-color; /* Light blue-grey background on hover */
+    color: v.$hover-text-color;
+  }
+}
+
+.method-badge {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 0.675rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 50px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  border-width: 0;
+  outline: none;
+  color: v.$text-white;
+  margin-right: 10px;
+
+  /* Light and readable background colors */
+  &.get {
+    background-color: v.$badge-get; /* Soft Blue */
+  }
+  &.post {
+    background-color: v.$badge-post; /* Mint Green */
+  }
+  &.put {
+    background-color: v.$badge-put; /* Lavender */
+  }
+  &.delete {
+    background-color: v.$badge-delete; /* Soft red */
+  }
+  &.patch {
+    background-color: v.$badge-patch; /* Light Orange */
+  }
+  &.head {
+    background-color: v.$badge-head; /* Pale Aqua */
+  }
+  &.options {
+    background-color: v.$badge-options; /* Light Grayish Blue */
+  }
+  &.connect {
+    background-color: v.$badge-connect; /* Soft Purple */
+  }
+  &.trace {
+    background-color: v.$badge-trace; /* Light Cyan */
   }
 }

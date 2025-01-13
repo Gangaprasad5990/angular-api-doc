@@ -57,7 +57,7 @@
               "projects/demo-app/src/favicon.ico",
               "projects/demo-app/src/assets"
             ],
-            "styles": ["node_modules/docuify/docuify/styles.css"],
+            "styles": ["node_modules/docuify/styles.css"],
             "scripts": []
           },
           "configurations": {
